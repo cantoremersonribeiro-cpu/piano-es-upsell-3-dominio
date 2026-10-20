@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El Sistema de Dominio del Piano - 12 semanas</title>
+<meta name="robots" content="noindex">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&family=Bebas+Neue&display=swap');
+html,body{margin:0;padding:0;background:#0B0D10;}
+.bgu-page{--bgu-bg:#0B0D10;--bgu-bg2:#12151A;--bgu-gold:#C9922F;--bgu-gl:#E9BE68;--bgu-cr:#F2EDE3;--bgu-cd:#C9C2B4;--bgu-td:#8A8375;--bgu-rl:#8C3A20;--bgu-gl2:#5FA87A;--bgu-line:rgba(233,190,104,.18);--bgu-r:10px;
+  background:var(--bgu-bg);color:var(--bgu-cr);font-family:'Lato',sans-serif;line-height:1.75;font-size:18px;padding-bottom:88px;overflow-x:hidden;}
+.bgu-page *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+.bgu-wrap{width:100%;max-width:620px;margin:0 auto;padding:0 20px;}
+.bgu-top{background:#070809;border-bottom:2px solid var(--bgu-rl);padding:11px 18px;text-align:center;}
+.bgu-top p{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#D97C5C;}
+.bgu-hero{background:radial-gradient(circle at 50% 0%,rgba(201,146,47,.14),transparent 48%),linear-gradient(170deg,#12100A,#0B0D10);padding:34px 20px 32px;text-align:center;border-bottom:1px solid var(--bgu-line);}
+.bgu-tag{display:inline-block;background:var(--bgu-rl);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;padding:7px 15px 6px;border-radius:3px;margin-bottom:18px;}
+.bgu-hero h1{font-family:'Playfair Display',serif;font-size:clamp(30px,8vw,45px);font-weight:900;line-height:1.12;color:var(--bgu-cr);margin-bottom:18px;}
+.bgu-hero h1 em{color:var(--bgu-gl);font-style:normal;}
+.bgu-sub{font-size:18px;color:var(--bgu-cd);line-height:1.75;max-width:540px;margin:0 auto;}
+.bgu-sub strong{color:var(--bgu-cr);}
+.bgu-result{margin:22px auto 0;max-width:500px;padding:14px 16px;background:rgba(233,190,104,.07);border:1px solid rgba(233,190,104,.2);border-radius:8px;font-size:17px;color:var(--bgu-cr);}
+.bgu-result strong{color:var(--bgu-gl);}
+.bgu-flash{display:flex;align-items:baseline;justify-content:center;gap:12px;margin:24px 0 5px;}
+.bgu-flash b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:60px;color:var(--bgu-gl);line-height:1;}
+.bgu-flashnote{font-size:14px;color:var(--bgu-td);}
+.bgu-btn{display:block;width:100%;max-width:480px;margin:21px auto 0;background:linear-gradient(180deg,#E9BE68,#C9922F);color:#1C1406;font-family:'Bebas Neue',sans-serif;font-size:27px;letter-spacing:1px;text-align:center;text-decoration:none;padding:18px 20px 15px;border-radius:var(--bgu-r);box-shadow:0 4px 0 #8A650F;}
+.bgu-btn:hover{filter:brightness(1.06);color:#1C1406;}
+.bgu-btn:active{transform:translateY(2px);box-shadow:0 2px 0 #8A650F;}
+.bgu-btnsub{text-align:center;font-size:14px;color:var(--bgu-td);margin-top:10px;line-height:1.6;}
+.bgu-section{padding:34px 20px 0;}
+.bgu-div{width:48px;height:3px;background:var(--bgu-gold);margin:0 auto 25px;border-radius:2px;}
+.bgu-text{font-size:18px;color:var(--bgu-cd);line-height:1.85;margin-bottom:25px;}
+.bgu-text p+p{margin-top:17px;}
+.bgu-text strong{color:var(--bgu-cr);}
+.bgu-q{text-align:center;font-family:'Playfair Display',serif;font-size:25px;line-height:1.3;color:var(--bgu-cr);margin:30px 0 18px;}
+.bgu-q span{color:var(--bgu-gl);}
+.bgu-prob{background:rgba(140,58,32,.10);border:1px solid rgba(140,58,32,.42);border-radius:var(--bgu-r);padding:21px 18px;margin:25px 0;}
+.bgu-prob h3{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:1.5px;color:#D97C5C;margin-bottom:12px;}
+.bgu-prob p{font-size:17px;color:var(--bgu-cd);line-height:1.75;}
+.bgu-prob p+p{margin-top:12px;}
+.bgu-sol{background:rgba(95,168,122,.07);border:1px solid rgba(95,168,122,.32);border-radius:var(--bgu-r);padding:21px 18px;margin:25px 0;}
+.bgu-sol h3{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:1.5px;color:var(--bgu-gl2);margin-bottom:12px;}
+.bgu-sol p{font-size:17px;color:var(--bgu-cd);line-height:1.75;}
+.bgu-sol strong{color:var(--bgu-cr);}
+.bgu-promise{text-align:center;margin:34px 0;}
+.bgu-plabel{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:var(--bgu-gl);margin-bottom:10px;}
+.bgu-promise h2{font-family:'Playfair Display',serif;font-size:28px;line-height:1.3;color:var(--bgu-cr);}
+.bgu-promise h2 span{color:var(--bgu-gl);}
+.bgu-path{margin:30px 0;}
+.bgu-ptitle{font-family:'Playfair Display',serif;text-align:center;font-size:22px;color:var(--bgu-cr);margin-bottom:6px;}
+.bgu-psub{text-align:center;color:var(--bgu-td);font-size:15px;margin-bottom:18px;}
+.bgu-plist{display:flex;flex-direction:column;gap:10px;}
+.bgu-pitem{display:flex;gap:14px;align-items:flex-start;padding:15px;background:rgba(201,146,47,.05);border:1px solid rgba(201,146,47,.14);border-radius:var(--bgu-r);}
+.bgu-pnum{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:rgba(233,190,104,.13);border:1px solid rgba(233,190,104,.35);color:var(--bgu-gl);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:17px;}
+.bgu-pitem strong{display:block;color:var(--bgu-cr);font-size:17px;margin-bottom:2px;}
+.bgu-pitem span{color:var(--bgu-cd);font-size:15px;line-height:1.55;}
+.bgu-pitem i{font-style:normal;color:var(--bgu-td);font-size:13px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-top:4px;}
+.bgu-inc{margin:32px 0;}
+.bgu-ititle{font-family:'Playfair Display',serif;font-size:23px;font-weight:700;color:var(--bgu-cr);margin-bottom:7px;text-align:center;}
+.bgu-isub{text-align:center;color:var(--bgu-td);font-size:15px;margin-bottom:18px;}
+.bgu-ilist{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.bgu-ilist li{font-size:17px;color:var(--bgu-cd);display:flex;align-items:flex-start;gap:11px;line-height:1.6;padding:14px 15px;background:rgba(201,146,47,.04);border:1px solid rgba(201,146,47,.12);border-radius:var(--bgu-r);}
+.bgu-ilist li::before{content:'\2713';color:var(--bgu-gl2);font-weight:700;flex-shrink:0;margin-top:1px;}
+.bgu-ilist li strong{color:var(--bgu-cr);}
+.bgu-value{margin:32px 0;padding:24px 18px;background:linear-gradient(145deg,rgba(233,190,104,.09),rgba(201,146,47,.03));border:2px solid rgba(233,190,104,.28);border-radius:14px;text-align:center;}
+.bgu-value h2{font-family:'Playfair Display',serif;font-size:25px;line-height:1.3;color:var(--bgu-cr);margin-bottom:12px;}
+.bgu-value p{color:var(--bgu-cd);font-size:17px;line-height:1.75;}
+.bgu-value p+p{margin-top:12px;}
+.bgu-value strong{color:var(--bgu-gl);}
+.bgu-price{scroll-margin-top:10px;background:rgba(201,146,47,.06);border:2px solid rgba(233,190,104,.45);border-radius:14px 14px 0 0;padding:27px 20px 25px;margin:32px 0 0;text-align:center;}
+.bgu-ptag{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:var(--bgu-gl);margin-bottom:12px;}
+.bgu-pnew{font-family:'Bebas Neue',sans-serif;font-size:84px;color:var(--bgu-gl);line-height:1;}
+.bgu-pdesc{font-size:15px;color:var(--bgu-td);margin-top:7px;}
+.bgu-pnote{margin-top:18px;padding-top:17px;border-top:1px solid rgba(201,146,47,.2);color:var(--bgu-cd);font-size:16px;line-height:1.7;}
+.bgu-pnote strong{color:var(--bgu-cr);}
+.bgu-buy{background:rgba(201,146,47,.06);border:2px solid rgba(233,190,104,.45);border-top:none;border-radius:0 0 14px 14px;padding:7px 16px 20px;margin:0 0 31px;scroll-margin-top:15px;min-height:60px;}
+.bgu-gar{background:rgba(201,146,47,.05);border:1px solid rgba(201,146,47,.2);border-radius:var(--bgu-r);padding:19px;text-align:center;margin:25px 0;}
+.bgu-gar p{font-size:16px;color:var(--bgu-cd);line-height:1.8;}
+.bgu-gar strong{color:var(--bgu-cr);}
+.bgu-excl{background:rgba(140,58,32,.12);border-left:3px solid var(--bgu-rl);padding:17px 18px;border-radius:0 var(--bgu-r) var(--bgu-r) 0;margin:23px 0;font-size:16px;color:var(--bgu-cd);line-height:1.8;}
+.bgu-excl strong{color:var(--bgu-cr);}
+.bgu-close{text-align:center;margin:31px 0 0;}
+.bgu-close h2{font-family:'Playfair Display',serif;font-size:27px;line-height:1.3;color:var(--bgu-cr);margin-bottom:13px;}
+.bgu-close h2 span{color:var(--bgu-gl);}
+.bgu-close p{color:var(--bgu-cd);font-size:17px;line-height:1.8;}
+.bgu-final{margin-top:17px;color:var(--bgu-cr) !important;font-weight:700;}
+.bgu-foot{background:#060708;padding:25px 20px;text-align:center;font-size:12px;color:var(--bgu-td);line-height:1.8;}
+.bgu-sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(9,11,13,.98);border-top:1px solid rgba(233,190,104,.35);padding:9px 13px calc(9px + env(safe-area-inset-bottom,0px));transform:translateY(120%);transition:transform .25s ease;}
+.bgu-sticky.bgu-on{transform:translateY(0);}
+.bgu-sin{max-width:620px;margin:0 auto;display:flex;align-items:center;gap:11px;}
+.bgu-sprice{flex-shrink:0;line-height:1.2;}
+.bgu-sprice b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:29px;color:var(--bgu-gl);}
+.bgu-sticky .bgu-btn{margin:0;font-size:20px;padding:13px 12px 10px;box-shadow:0 3px 0 #8A650F;}
+@media(max-width:380px){.bgu-page{font-size:17px;}.bgu-hero h1{font-size:29px;}.bgu-sub{font-size:17px;}.bgu-flash b{font-size:54px;}.bgu-pnew{font-size:72px;}.bgu-sticky .bgu-btn{font-size:18px;}}
+@media(prefers-reduced-motion:reduce){.bgu-sticky{transition:none;}}
+</style>
+<!-- Meta Pixel Code (loads after the page, same pixel ID) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];f.addEventListener('load',function(){setTimeout(function(){
+t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)},1200)});}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3779607118846569');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3779607118846569&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+</head><body>
+<div class="bgu-page">
+
+<div class="bgu-top"><p>&#9995; ESPERA &mdash; ANTES DE IR A TUS DESCARGAS</p></div>
+
+<section class="bgu-hero"><div class="bgu-wrap">
+  <div class="bgu-tag">TU SIGUIENTE PASO EMPIEZA AQUÍ</div>
+  <h1>Ya tocas canciones simples.<br>Ahora suena como <em>un pianista de verdad.</em></h1>
+  <p class="bgu-sub">El Mapa de la Mano Izquierda te dio los acordes y los patrones con los que se construye cada canción. Falta una sola cosa: <strong>el siguiente nivel &mdash; las habilidades que hacen que un principiante suene seguro.</strong></p>
+  <div class="bgu-result"><strong>Un sistema de 12 semanas, 20 minutos al día</strong> &mdash; inversiones, acordes de séptima, nuevas tonalidades, ritmos y tu primera improvisación.</div>
+  <div class="bgu-flash"><b>US$9</b></div>
+  <p class="bgu-flashnote">Pago único &middot; Descarga inmediata &middot; Garantía de 7 días</p>
+  <a href="#bgu-oferta" class="bgu-btn">SÍ &mdash; QUIERO EL SISTEMA DE 12 SEMANAS</a>
+  <p class="bgu-btnsub">Un solo pago &middot; Sin mensualidades</p>
+</div></section>
+
+<section class="bgu-section"><div class="bgu-wrap">
+  <div class="bgu-div"></div>
+  <div class="bgu-text">
+    <p>Piensa en lo que acaba de pasar. Compraste <strong>El Mapa de la Mano Izquierda</strong> porque querías un camino claro, no consejos sueltos.</p>
+    <p>Ahora tocas acordes y patrones. La pregunta siguiente es cómo seguir mejorando sin perderte.</p>
+  </div>
+  <div class="bgu-q">Pero hay una pregunta que el mapa no responde:<br><span>¿Qué practicas después de lo básico?</span></div>
+  <div class="bgu-prob"><h3>LO QUE SUELE PASAR</h3>
+    <p>La mayoría se estanca justo aquí. Tiene lo básico y después salta entre videos, técnicas y canciones, y practica lo mismo que ya sabe.</p>
+    <p>Pasan los meses, sigue sonando igual y decide que llegó a su límite.</p>
+  </div>
+  <div class="bgu-sol"><h3>POR QUÉ ESE ES EL PUNTO DE PARTIDA EQUIVOCADO</h3>
+    <p>Avanzar después de lo básico no es talento, es <strong>orden</strong>: una habilidad nueva por semana, practicada en la secuencia correcta, con una meta clara.</p>
+    <p style="margin-top:12px;"><strong>El Sistema de Dominio del Piano</strong> te da ese orden durante 12 semanas &mdash; 60 días de práctica, cada uno con lo que tienes que tocar y cuándo estás listo para avanzar.</p>
+  </div>
+  <div class="bgu-promise"><div class="bgu-plabel">EL VERDADERO SIGUIENTE PASO</div>
+    <h2>No te quedes en principiante.<br><span>Sigue el sistema.</span></h2></div>
+
+  <div class="bgu-path"><div class="bgu-ptitle">Tu camino de 3 meses</div>
+    <div class="bgu-psub">Una habilidad nueva por semana, 20 minutos al día</div>
+    <div class="bgu-plist"><div class="bgu-pitem"><div class="bgu-pnum">1</div><div><strong>Mes 1: cambios suaves</strong><span>Inversiones, para que tu mano casi no se mueva y los acordes suenen como los de un pianista.</span><i>Fácil</i></div></div><div class="bgu-pitem"><div class="bgu-pnum">2</div><div><strong>Mes 2: color y nuevas tonalidades</strong><span>Acordes de séptima, las tonalidades de G y F, y pedal limpio.</span><i>Intermedio</i></div></div><div class="bgu-pitem"><div class="bgu-pnum">3</div><div><strong>Mes 3: libertad</strong><span>Tres ritmos, leer cualquier cifrado y tu primera improvisación.</span><i>Intermedio</i></div></div><div class="bgu-pitem"><div class="bgu-pnum">4</div><div><strong>Una meta clara cada semana</strong><span>Cada semana termina con un “Listo cuando”, para que sepas cuándo avanzar.</span><i>Fácil</i></div></div><div class="bgu-pitem"><div class="bgu-pnum">5</div><div><strong>Tu concierto</strong><span>Semana 12: un repertorio de tres canciones, tocado o grabado de principio a fin.</span><i>Intermedio</i></div></div></div></div>
+
+  <div class="bgu-inc"><div class="bgu-ititle">Dentro de El Sistema de Dominio del Piano</div>
+    <div class="bgu-isub">21 páginas, con los mismos diagramas y la misma notación que ya conoces</div>
+    <ul class="bgu-ilist"><li><span><strong>12 semanas, 60 días de práctica</strong> &mdash; 20 minutos al día, con lo que tienes que tocar</span></li><li><span><strong>Inversiones de los seis acordes</strong> &mdash; el secreto de los cambios de acorde suaves, estilo pianista</span></li><li><span><strong>Acordes de séptima</strong> &mdash; G7, Cmaj7, Am7, Dm7, Em7 y Fmaj7, dibujados en el teclado</span></li><li><span><strong>Dos tonalidades nuevas</strong> &mdash; G y F, con sus acordes y una melodía en cada una</span></li><li><span><strong>Pedal limpio y arpegios grandes</strong> &mdash; el sonido que llena una sala</span></li><li><span><strong>Tres ritmos</strong> &mdash; balada pop, pop-rock y el anticipo</span></li><li><span><strong>Leer cualquier cifrado</strong> &mdash; una rutina de 5 pasos para aprender una canción nueva en menos de 30 minutos</span></li><li><span><strong>Tu primera improvisación</strong> &mdash; la escala pentatónica y la de blues, sobre progresiones reales</span></li><li><span><strong>Un registro de 12 semanas y una referencia rápida</strong> &mdash; para imprimir y dejar en el atril</span></li><li><span><strong>Diagramas claros sobre fondo crema</strong> &mdash; fáciles de leer en el celular o en papel</span></li><li><span><strong>Es tuyo para siempre</strong> &mdash; lo descargas, lo imprimes, no vence</span></li></ul></div>
+
+  <div class="bgu-value"><h2>El Mapa de la Mano Izquierda te dio la base.<br>Este te da el camino.</h2>
+    <p>El Mapa de la Mano Izquierda es tu <strong>punto de partida.</strong> Este es tu <strong>mapa de ruta.</strong></p>
+    <p>Dentro de doce semanas puedes sonar igual que hoy, o tocar acordes como un pianista, en tres tonalidades, con ritmos de verdad e ideas propias. La diferencia es un plan.</p></div>
+
+  <div class="bgu-price" id="bgu-oferta"><div class="bgu-ptag">OFERTA ÚNICA</div>
+    <div class="bgu-pnew">US$9</div>
+    <div class="bgu-pdesc">Pago único &middot; Sin mensualidades &middot; Descarga inmediata</div>
+    <div class="bgu-pnote">Estás viendo esto <strong>porque acabas de llevarte El Mapa de la Mano Izquierda.</strong> Este es el plan para los próximos tres meses de tu música.</div></div>
+
+  <div class="bgu-buy" id="bgu-buy"><div id="hotmart-sales-funnel"></div></div>
+
+  <div class="bgu-gar"><p>&#128737;&#65039; <strong>Garantía de reembolso de 7 días.</strong><br>Ábrelo y empieza la semana 1. Si no es lo que esperabas, pide el reembolso dentro de los 7 días y te devuelven el 100%.</p></div>
+
+  <div class="bgu-excl">&#9888;&#65039; <strong>El Sistema de Dominio del Piano no se vende por separado.</strong><br><br>Esta página es el único lugar donde se ofrece, y solo para quienes acaban de llevarse El Mapa de la Mano Izquierda.</div>
+
+  <div class="bgu-close"><h2>Ya tienes lo básico.<br><span>Ahora da el siguiente paso.</span></h2>
+    <p>La mayoría deja de mejorar justo después de lo básico, porque nadie le dice qué viene después. Este sistema te lo dice, una semana a la vez.</p>
+    <p class="bgu-final">12 semanas. 20 minutos al día. Sin partituras.</p></div>
+
+  <a href="#bgu-oferta" class="bgu-btn">SÍ &mdash; QUIERO EL SISTEMA DE DOMINIO</a>
+  <p class="bgu-btnsub" style="margin-bottom:36px;">US$9 &middot; pago único &middot; garantía de 7 días</p>
+</div></section>
+
+<div class="bgu-foot"><p>&copy; The Masters' Secret &middot; Todos los derechos reservados</p><p style="margin-top:6px;">Alojado de forma segura en Hotmart</p></div>
+
+<div class="bgu-sticky" id="bgu-sticky"><div class="bgu-sin">
+  <div class="bgu-sprice"><b>US$9</b></div>
+  <a href="#bgu-oferta" class="bgu-btn">LO QUIERO AHORA</a></div></div>
+</div>
+
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+<script>checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');</script>
+<script>
+(function(){
+  var bar=document.getElementById('bgu-sticky'),buy=document.getElementById('bgu-buy');
+  if(!bar||!buy)return; var buyVisible=false;
+  function update(){var past=window.scrollY>420; if(past&&!buyVisible){bar.classList.add('bgu-on');}else{bar.classList.remove('bgu-on');}}
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){buyVisible=e[0].isIntersecting;update();},{threshold:0.25}).observe(buy);}
+  window.addEventListener('scroll',update,{passive:true}); update();
+})();
+</script>
+<script>
+(function(){
+  var alvo=document.getElementById('bgu-oferta');if(!alvo)return;
+  function ir(){var y=alvo.getBoundingClientRect().top+window.pageYOffset-10;window.scrollTo({top:y,behavior:'smooth'});}
+  document.querySelectorAll('a[href="#bgu-oferta"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();ir();setTimeout(ir,700);});});
+})();
+</script>
+</body></html>
